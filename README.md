@@ -1,3 +1,78 @@
+# FounderMatch
+
+An AI-powered platform that matches startup founders with mentors using Groq's language models.
+
+## Features
+
+- Founder profile registration
+- Mentor profile registration
+- AI-powered matching algorithm
+- Feedback collection system
+- Clean, responsive UI
+
+## Prerequisites
+
+- Node.js 16.8 or later
+- npm or yarn package manager
+- Groq API key
+
+## Setup Instructions
+
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd founder-match
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Create a `.env.local` file in the root directory with your Groq API key:
+   ```
+   GROQ_API_KEY="your-groq-api-key-here"
+   ```
+   
+   You can get a Groq API key by signing up at [console.groq.com](https://console.groq.com).
+
+4. Run the development server
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application
+
+## Backend API Endpoints
+
+- `/api/chat` - Chat API for communicating with Groq models
+- `/api/matches` - Generates mentor-founder matches using Groq's AI
+- `/api/feedback` - Saves feedback for mentor-founder matches
+
+## Deployment
+
+To build for production:
+
+```bash
+npm run build
+npm start
+# or
+yarn build
+yarn start
+```
+
+## Technologies Used
+
+- Next.js
+- React
+- Tailwind CSS
+- Groq AI API
+- Vercel AI SDK
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
